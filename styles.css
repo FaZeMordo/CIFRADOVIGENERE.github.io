@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7; /* Fondo gris claro típico de Apple */
+    color: #1d1d1f; /* Texto en negro casi puro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #1d1d1f; /* Título en negro elegante */
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.container {
+    background-color: #ffffff; /* Contenedor blanco puro */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo */
+    text-align: center;
+}
+
+label {
+    display: block;
+    color: #6e6e73; /* Texto en gris suave */
+    font-size: 1em;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #1d1d1f; /* Texto negro */
+    border: 1px solid #d2d2d7; /* Borde gris claro */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0071e3; /* Borde azul típico de Apple */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #0071e3; /* Azul Apple */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; /* Azul más oscuro al pasar el cursor */
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    color: #1d1d1f;
+    padding: 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
